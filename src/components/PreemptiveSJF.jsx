@@ -38,6 +38,7 @@ const PreemptiveSJF = () => {
 
     // Format processes for backend
     const formattedProcesses = processes.map(process => ({
+      processId: process.processId, // Add processId
       arrival: Number(process.arrivalTime), // Ensure it's a number
       burst: Number(process.burstTime),     // Ensure it's a number
     }));
